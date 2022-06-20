@@ -1,4 +1,9 @@
-// COMO COMPILAR: gcc -o parte1 parte1.c
+/*
+    EP3 MAC0210 - PARTE 1
+    ALUNO: Matheus Sanches Jurgensen (12542199)
+    COMO COMPILAR: gcc -o parte1 parte1.c
+    COMO EXECUTAR: ./parte1
+*/
 
 #include <stdio.h>
 #include <math.h>
@@ -23,6 +28,11 @@ double lagrange(double dados[], int n_pontos, int x) {
 }
 
 double trapezio(double dados[], int n_pontos, int n) {
+    /*
+    Método que aproxima a integral (trabalho da força) pela Regra do Trapézio Composto. Os argumentos dados[] e
+    n_pontos são os mesmos do método de Lagrange. Além disso, n é quantidade de subintervalos nos quais se imple-
+    menta o método.
+    */
     double a = dados[0], b = dados[(2 * n_pontos) - 2];
     double h = fabs(b - a) / n;
     double soma = (dados[1] + dados[(2 * n_pontos) - 1]) / 2;
@@ -34,7 +44,12 @@ double trapezio(double dados[], int n_pontos, int n) {
     return soma;
 }
 
-double simpson(double dados[], int n_pontos, int n) { // n deve ser par
+double simpson(double dados[], int n_pontos, int n) {
+    /*
+    Método que aproxima a integral (trabalho da força) pela Regra de Simpson Composto. Os argumentos dados[] e
+    n_pontos são os mesmos do método de Lagrange. Além disso, n é quantidade par de subintervalos nos quais se
+    implementa o método.
+    */
     double a = dados[0], b = dados[(2 * n_pontos) - 2];
     double h = fabs(b - a) / n;
     double soma_final = dados[1] + dados[(2 * n_pontos) - 1];
