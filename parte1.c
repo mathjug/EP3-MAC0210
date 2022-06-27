@@ -1,6 +1,6 @@
 /*
     EP3 MAC0210 - PARTE 1
-    ALUNO: Matheus Sanches Jurgensen (12542199)
+    ALUNOS: Matheus Sanches Jurgensen (12542199) e André Nogueira Ribeiro (12542230)
     COMO COMPILAR: gcc -o parte1 parte1.c
     COMO EXECUTAR: ./parte1
 */
