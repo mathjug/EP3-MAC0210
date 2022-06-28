@@ -40,12 +40,12 @@ double x3(double x){
     /*
     Deseja-se aproximar a integral de 3 até 7 de (x³).
     Visando esse objetivo, essa função servirá para retornar o valor de 
-    ((4*u+3)*(4*u+3)*(4*u+3))*4 para função que realiza a aproximação.
+    ((4*u+3)^3)*4 para função que realiza a aproximação.
     Explicando melhor, como a função em questão aproxima integrais de 0 até
     1, foi necessário realizar uma substituição, utilizando u = (x-3)/4 
     e 4*du = dx, de modo a ajustar os limites de integração. Substituindo 
     esses valores na integral inicial, conclui-se que a integral inicial 
-    e igual a integral de 0 até 1 de ((4*u+3)*(4*u+3)*(4*u+3))*4.
+    e igual a integral de 0 até 1 de ((4*u+3)^3)*4.
      */
     double u = x;
     return (pow((4*u+3),3)*4);
