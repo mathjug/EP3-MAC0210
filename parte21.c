@@ -48,7 +48,7 @@ double x3(double x){
     e igual a integral de 0 até 1 de ((4*u+3)*(4*u+3)*(4*u+3))*4.
      */
     double u = x;
-    return (((4*u+3)*(4*u+3)*(4*u+3))*4);
+    return (pow((4*u+3),3)*4);
 }
 
 double ex(double x){
