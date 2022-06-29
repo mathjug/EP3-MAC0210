@@ -73,6 +73,7 @@ int main() {
     int n;
     printf("Qual o valor de n? ");
     scanf("%d", &n);
-    double exp = integralExponencial(n);
-    printf("O valor da integral da exponencial é: %f\n", exp);
+    printf("O valor da integral de sen(x) entre 0 e 1: %f\n", uniMonteCarlo(n, seno));
+    printf("O valor da integral de x³ entre 3 e 7: %f\n", uniMonteCarlo(n, cubo));
+    printf("O valor da integral de exp(-x) entre 0 e +∞: %f\n", integralExponencial(n));
 }
