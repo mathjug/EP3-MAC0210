@@ -9,7 +9,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-double lagrange(double dados[], int n_pontos, int x) {
+double lagrange(double dados[], int n_pontos, double x) {
     /*
     Método que, recebendo um conjunto de pontos conhecidos a serem interpolados (de forma que as abscissas e as
     ordenadas estão dispostas intercaladas), além de um valor de x a ser calculado com um polinômio interpolador,
